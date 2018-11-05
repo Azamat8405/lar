@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="stylesheet" href="/assets/css/ch_main.css" />
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -15,16 +16,11 @@
 					</header>
 
 					<article id="main">
-						<header>
-							<h2>Generic Page</h2>
-							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
-						</header>
-						<section class="wrapper style5">
-							<div class="inner">
-								<h3>{{$content_text->title}}</h3>
-								{{$content_text->text}}
-							</div>
-						</section>
+
+						@section('body')
+
+						@show
+
 					</article>
 
 					<footer id="footer">

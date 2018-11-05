@@ -14,14 +14,12 @@ class TextController extends Controller
      */
     public function index($url_text)
     {
-
-
         $text = Text::where('url', $url_text)->first();
 
-        return view('base/inner', [
+        return view('base/inner/text/simple_text', [
             'messages' => '',
-            'title' => env('APP_NAME', 'mysql'),
-            'content_text' => $text
+            'page_title' => env('APP_NAME', 'mysql'),
+            'text' => $text
             ]);
     }
 }

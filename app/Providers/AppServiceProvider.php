@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+use Illuminate\Support\Facades\View;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -13,7 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->share('title', env('APP_NAME', 'mysql'));
+        view()->share('page_title', 'vadddddddddddddlue');
+        view()->share('page_body', '');
+
     }
 
     /**

@@ -1,0 +1,33 @@
+ul.icons.major li {
+    padding-right: 3em;
+    padding-left: 3em;
+}
+.features li a{
+text-decoration:none;
+border-bottom:0;
+}
+.icon.major{
+	height: calc(10em + 2px);
+    width: calc(10em + 2px);
+}
+
+.wrapper.style1 .icon.major{
+    overflow: hidden;
+    background: #fff;
+}
+
+.wrapper.style1 .icon.major img{
+	position: relative;
+    left: 5px;
+    -moz-transform: rotate(+45deg);
+    /* -webkit-transform: rotate(+45deg); */
+    -ms-transform: rotate(+45deg);
+    transform: rotate(+45deg);
+    top: 0;
+}
+.all_link{
+    margin:20px 0 0 0;
+}
+.all_link a{
+    font-size:0.9em;
+}

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\{Text};
+use App\{Text, News};
 
 class IndexController extends Controller
 {
@@ -15,14 +15,12 @@ class IndexController extends Controller
      */
     public function index()
     {
-		// $text = Text::find(1);
-		// print_r($text);
-
-	
+		$news = News::orderBy('created_at')->take(10)->get();
 
         return view('base/index', [
         	'messages' => '',
-        	'title' => env('APP_NAME', 'mysql')
+        	'title' => env('APP_NAME', 'mysql'),
+            'news' => $news
         ]);
     }
 }
