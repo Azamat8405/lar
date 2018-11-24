@@ -20,6 +20,9 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
+
+				//$('body').addClass('is-preload')
+
 			}, 100);
 		});
 
@@ -60,17 +63,7 @@
 				visibleClass: 'is-menu-visible'
 			});
 
-		$(window).scroll(function(){
-
-			if($banner.outerHeight() <=  $(document).scrollTop())
-			{
-				$header.removeClass('alt');
-			}
-			else
-			{
-				$header.addClass('alt');
-			}
-		});
+		
 
 	// Header.
 		if ($banner.length > 0
@@ -78,4 +71,6 @@
 			$window.on('resize', function() { $window.trigger('scroll'); });
 		}
 
+
 })(jQuery);
+

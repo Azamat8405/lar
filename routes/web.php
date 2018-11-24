@@ -16,3 +16,7 @@ Route::get('/texts/{url_text}', 'TextController@index')->name('text');
 
 Route::get('/news/', 'NewsController@index');
 Route::get('/news/{url_news}', 'NewsController@full')->name('full_news');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

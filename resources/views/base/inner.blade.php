@@ -11,7 +11,7 @@
 	<body class="is-preload">
 			<div id="page-wrapper">
 					<header id="header">
-						<h1><a href="index.html">Spectral</a></h1>
+						<h1><a href="/">ВЛАДИКАВКАЗСКАЯ АКАДЕМИЯ СПОРТА</a></h1>
 		   				@include('base.menu')
 					</header>
 

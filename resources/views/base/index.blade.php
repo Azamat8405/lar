@@ -11,7 +11,7 @@
 	<body class="landing is-preload">
 		<div id="page-wrapper">
 			<header id="header" class="alt">
-				<h1><a href="index.html">Владикавказская академия спорта</a></h1>
+				<h1><a href="/">Владикавказская академия спорта</a></h1>
 				
    				@include('base.menu')
 			</header>
@@ -23,12 +23,13 @@
 						<p>Another fine responsive<br />
 						site template freebie<br />
 						crafted by <a href="">HTML5 UP</a>.</p>
-					-->
+
 					<ul class="actions special">
 						<li><a href="#" class="button primary">Activate</a></li>
 					</ul>
+					-->
 				</div>
-				<a href="#one" class="more scrolly">Learn More</a>
+				<a href="#one" class="more scrolly">Узнать больше</a>
 			</section>
 
 			<section id="one" class="wrapper style1 special">
@@ -128,18 +129,19 @@
 					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="">HTML5 UP</a></li>
+					<li>&copy; ВЛАДИКАВКАЗСКАЯ АКАДЕМИЯ СПОРТА</li>
 				</ul>
 			</footer>
 		</div>
 
-		<script src="assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.scrolly.min.js"></script>
+		<script src="/assets/js/jquery-ui.min.js"></script>
 
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/main_page.js"></script>
 	</body>
 </html>
