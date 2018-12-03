@@ -4,6 +4,7 @@
 		<title>{{$title}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<link rel="stylesheet" href="/assets/css/ch_main.css" />
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
@@ -14,25 +15,16 @@
 						<h1><a href="/">ВЛАДИКАВКАЗСКАЯ АКАДЕМИЯ СПОРТА</a></h1>
 		   				@include('base.menu')
 					</header>
-
 					<article id="main">
-
 						@section('body')
-
 						@show
-
 					</article>
-
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="http://instagram.com/vldacsport" target="_blank" class="icon fa-instagram"><span class="label">@vldacsport</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; ВЛАДИКАВКАЗСКАЯ АКАДЕМИЯ СПОРТА</li>
 						</ul>
 					</footer>
 

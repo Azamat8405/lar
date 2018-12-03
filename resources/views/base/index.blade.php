@@ -43,19 +43,17 @@
 					</header>
 					<ul class="icons major">
 						<li>
-
-
-							<span class="icon fa-diamond major style1">
+							<span class="icon major style1">
 								<img src="/images/slogan1.jpg" >
 							</span>
 						</li>
 						<li>
-							<span class="icon fa-heart-o major style2">
+							<span class="icon major style2">
 								<img src="/images/slogan2.jpg" >
 							</span>
 						</li>
 						<li>
-							<span class="icon fa-code major style3">
+							<span class="icon major style3">
 								<img src="/images/slogan3.jpg" >
 							</span>
 						</li>
@@ -128,11 +126,7 @@
 
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					<li><a href="http://instagram.com/vldacsport" target="_blank" class="icon fa-instagram"><span class="label">@vldacsport</span></a></li>
 				</ul>
 				<ul class="copyright">
 					<li>&copy; ВЛАДИКАВКАЗСКАЯ АКАДЕМИЯ СПОРТА</li>

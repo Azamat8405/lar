@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategsTable extends Migration
+class CreateCoachesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateCategsTable extends Migration
      */
     public function up()
     {
-        Schema::create('categs', function (Blueprint $table) {
+        Schema::create('coaches', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->string('ident');
-            $table->string('url')->nullable();
-             \Kalnoy\Nestedset\NestedSet::columns($table);
+            $table->string('name');
+            $table->string('img')->nullable();
+            $table->integer('categ_id');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateCategsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categs');
+        Schema::dropIfExists('coaches');
     }
 }

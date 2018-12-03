@@ -13,17 +13,38 @@ class CategsSeeder extends Seeder
      */
     public function run()
     {
-
         $node = Categs::create([
             'title' => 'Root',
             'ident' => 'root',
             'children' => [
                 [
                     'title' => 'Новости',
-                    'ident' => 'news'
+                    'ident' => 'news',
+                    'url' => 'news'
+                ],
+                [
+                    'title' => 'Тренерский состав',
+                    'url' => 'coaches',
+                    'ident' => 'coaches',
+                    'children' => [
+                        [
+                            'title' => 'Теннисисты',
+                            'url' => 'tennis',
+                            'ident' => 'coaches'
+                        ],
+                        [
+                            'title' => 'Футболисты',
+                            'url' => 'football',
+                            'ident' => 'coaches'
+                        ],
+                        [
+                            'title' => 'Борцы',
+                            'url' => 'fighter',
+                            'ident' => 'coaches'
+                        ]
+                    ],
                 ],
             ],
         ]);
-
     }
 }

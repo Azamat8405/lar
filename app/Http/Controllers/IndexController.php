@@ -19,17 +19,11 @@ class IndexController extends Controller
      */
     public function index()
     {
-
-
         // $c = \App\Categs::find(1);
-
-
         // $cat = new \App\Categs();
         // $cat->c_title = 'Second';
         // $cat->save();
-
         // $c->appendNode($cat);
-
 
 		$news = News::orderBy('created_at')->take(10)->get();
 

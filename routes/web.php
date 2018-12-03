@@ -12,10 +12,12 @@
 */
 
 Route::get('/', 'IndexController@index');
-Route::get('/texts/{url_text}', 'TextController@index')->name('text');
+Route::get('/texts/{url}', 'TextController@index')->name('text');
 
 Route::get('/news/', 'NewsController@index');
 Route::get('/news/{url_news}', 'NewsController@full')->name('full_news');
+Route::get('/coaches/', 'CoachController@index');
+Route::get('/coaches/{url}', 'CoachController@index');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
