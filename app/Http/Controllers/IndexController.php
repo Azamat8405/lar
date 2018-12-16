@@ -20,7 +20,7 @@ class IndexController extends Controller
     public function index()
     {
 
-        exit('555');
+
         // $c = \App\Categs::find(1);
         // $cat = new \App\Categs();
         // $cat->c_title = 'Second';
