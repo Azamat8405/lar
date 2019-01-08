@@ -5,7 +5,7 @@ function FadeInFon()
 {
 	t = 0.5;
 	interval = setInterval(function(){
-		t = parseFloat(t) + parseFloat('0.020');
+		t = parseFloat(t) + parseFloat('0.030');
 		if(t >= 1)
 		{
 			clearInterval( interval );
@@ -25,13 +25,13 @@ function fadeOutFon()
 {
 	interval = setInterval(function(){
 
-		t = parseFloat(t) - parseFloat('0.005');
+		t = parseFloat(t) - parseFloat('0.010');
 		if(t < 0.5)
 		{
 			clearInterval( interval );
 			setTimeout(function(){
 				FadeInFon();
-			}, 4000);
+			}, 2000);
 		}
 		$('#page-wrapper').css('background-image', '-webkit-linear-gradient(top, rgba(0,0,0,'+t+'), rgba(0,0,0,'+t+')), url(/images/fon'+imgnum+'.jpg)');
 	}, 40);
@@ -39,7 +39,7 @@ function fadeOutFon()
 
 setTimeout(function(){
 	FadeInFon();
-}, 7000);
+}, 5000);
 
 $banner = $('#banner');
 $header = $('#header');
@@ -54,3 +54,24 @@ $(window).scroll(function(){
 		$header.addClass('alt');
 	}
 });
+
+
+
+$(window).on("load", function() {
+
+
+
+	$('.spotlight').each(function(){
+
+
+		console.log($(this).find('.image img').get(0));
+
+		var t = $(this).find('.image img').get(0).height;
+		
+		console.log(t);
+
+		$(this).find('.content').css('height', t);
+
+	});
+});
+

@@ -61,6 +61,15 @@ input, select, textarea {
 	appearance: none;
 }
 /* Basic */
+	.spotlight.football .content {
+	    background: #0d9006;
+	}
+	.spotlight.tenis .content {
+	    background: #a24d21;
+	}
+	.spotlight.borba .content {
+	    background: #003897;
+	}
 
 	@-ms-viewport {
 		width: device-width;
@@ -2630,16 +2639,16 @@ input, select, textarea {
 
 /* Spotlight */
 
-	.spotlight {
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-	}
+		.spotlight {
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+		}
 
 		.spotlight .image {
 			-moz-order: 1;
@@ -2713,6 +2722,8 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
+
+
 
 			.spotlight .image {
 				width: 45%;
@@ -3967,3 +3978,10 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+.contact_logo{
+	float: left;
+    margin: 0 7px 0 0;
+    width:25px;
+}
+    

@@ -20,17 +20,6 @@ class IndexController extends Controller
     public function index()
     {
 
-
-
-        $r = false;
-        $r1 = array();
-        if($r == $r1)
-        {
-            echo 'true';
-        }
-
-
-exit();
 // vospit_system.pdf
 // instrukcia_pojarnaya.pdf
 
@@ -162,7 +151,7 @@ exit();
         // $cat->save();
         // $c->appendNode($cat);
 
-		$news = News::orderBy('created_at')->take(10)->get();
+		$news = News::orderBy('created_at')->take(2)->get();
 
         return view('base/index', [
         	'messages' => '',
