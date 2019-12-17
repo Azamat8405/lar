@@ -18,6 +18,7 @@ class TextController extends Controller
         $text = Text::where('url', $url)->first();
         $categ = Categs::where('url', $url)->first();
 
+
         $coaches = [];
         if($categ)
         {

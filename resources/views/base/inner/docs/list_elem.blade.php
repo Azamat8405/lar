@@ -1,0 +1,1 @@
+<a target="_blank" href="{{ $doc->url }}">{{ $doc->title }}</a><br>

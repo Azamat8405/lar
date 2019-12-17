@@ -12,7 +12,7 @@
 		<div id="page-wrapper">
 			<header id="header" class="alt">
 				<h1><a href="/">Владикавказская академия спорта</a></h1>
-				
+
    				@include('base.menu')
 			</header>
 
@@ -71,12 +71,12 @@
 			<section id="two" class="wrapper alt style2">
 				<section class="spotlight football">
 					<div class="image">
-						<a href="{{route('text', 'become_football_player')}}">
+						<a href="{{route('text', 'football')}}">
 							<img src="/images/pic02.jpg" alt="" />
 						</a>
 					</div>
 					<div class="content">
-						<a href="{{route('text', 'become_football_player')}}">
+						<a href="{{route('text', 'football')}}">
 							<h2>Стать футболистом</h2>
 						</a>
 						<p>Футбол — командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее, чем команда соперника количество раз. В настоящее время самый популярный и массовый вид спорта в мире.</p>
@@ -84,12 +84,12 @@
 				</section>
 				<section class="spotlight tenis">
 					<div class="image">
-						<a href="{{route('text', 'become_tennis_player')}}">
+						<a href="{{route('text', 'tennis')}}">
 							<img src="/images/pic03.jpg" alt="" />
 						</a>
 					</div>
 					<div class="content">
-						<a href="{{route('text', 'become_tennis_player')}}">
+						<a href="{{route('text', 'tennis')}}">
 							<h2>Стать теннисистом</h2>
 						</a>
 						<p>Истоки тенниса лежат в глубокой древности. Игра в мяч была популярна у разных народов и в разных цивилизациях. Упоминания о ней мы находим в памятках древнего Египта, Китая, Греции и Рима, Византии, Южной Америки. Изображение этих игр сохранилось на египетских рельефах и рисунках античных ваз.</p>
@@ -97,12 +97,12 @@
 				</section>
 				<section class="spotlight borba">
 					<div class="image">
-						<a href="{{route('text', 'become_fighter')}}">
+						<a href="{{route('text', 'fighter')}}">
 							<img src="/images/pic01.jpg" alt="" />
 						</a>
 					</div>
 					<div class="content">
-						<a href="{{route('text', 'become_fighter')}}">
+						<a href="{{route('text', 'fighter')}}">
 							<h2>Стать борцом</h2>
 						</a>
 						<p>Борьба – вид спорта, один из самых древних и любимых народом. Истоки зарождения борьбы уходят в древние века.</p>
