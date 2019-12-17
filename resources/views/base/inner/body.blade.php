@@ -2,10 +2,12 @@
 
 @section('body')
 	<header>
-		<h2>Generic Page</h2>
-		<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+		<h2>{{$page_title}}</h2>
+		<p></p>
+	
 	</header>
-	<section class="wrapper style5">
+
+	<section class="wrapper style5" style="@if( isset($fon_bg)) {{$fon_bg}} }@else "" @endif">
 		<div class="inner">
 
 			<h3>{{$page_title}}</h3>

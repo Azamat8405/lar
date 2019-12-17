@@ -21,19 +21,35 @@ class TextController extends Controller
         $coaches = [];
         if($categ)
         {
-            $coaches = Coaches::where('categ_id', $categ->id)->inRandomOrder()->get();            
+            $coaches = Coaches::where('categ_id', $categ->id)->inRandomOrder()->get();
         }
 
-
         $template = 'text';
+
+        $fon_bg = '';
         if($url == 'contacts')
         {
             $template = 'text_contacts';
         }
+
+        if($url == 'football')
+        {
+            $fon_bg = 'background:#8eea89;';
+        }
+        elseif($url == 'tennis')
+        {
+            $fon_bg = 'background:#deaa72;';
+        }
+        elseif($url == 'fighter')
+        {
+            $fon_bg = 'background:#7a97c7;';
+        }
+
         return view('base/inner/text/'.$template, [
             'messages' => '',
+            'fon_bg' => $fon_bg,
             'url' => $url,
-            'page_title' => env('APP_NAME', 'mysql'),
+            'page_title' => isset($text->title) ? $text->title : env('APP_NAME', 'mysql'),
             'text' => $text,
             'coaches' => $coaches
             ]);

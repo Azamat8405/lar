@@ -9,7 +9,8 @@
 		<link rel="stylesheet" href="/assets/css/ch_main.css" />
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload landing">
+
 			<div id="page-wrapper">
 					<header id="header">
 						<h1><a href="/">ВЛАДИКАВКАЗСКАЯ АКАДЕМИЯ СПОРТА</a></h1>

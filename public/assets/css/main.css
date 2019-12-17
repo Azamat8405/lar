@@ -2670,7 +2670,7 @@ input, select, textarea {
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
-			max-width: 48em;
+			/*max-width: 48em;*/
 			width: 60%;
 		}
 
@@ -3396,6 +3396,13 @@ input, select, textarea {
 			width: 7em;
 		}
 
+		#menu ul > li > ul {
+			margin:7px 0 0 20px;
+		}
+		#menu ul > li > ul > li {
+			font-size:14px;
+		}
+
 		@media screen and (max-width: 736px) {
 
 			#menu {
@@ -3795,10 +3802,12 @@ input, select, textarea {
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
+		/*
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		*/
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3984,4 +3993,11 @@ input, select, textarea {
     margin: 0 7px 0 0;
     width:25px;
 }
-    
+
+.major .dir{
+	max-width:300px;
+	min-width:150px;
+	width:30%;
+	float:left;
+	margin:0 25px 0 0;
+}
