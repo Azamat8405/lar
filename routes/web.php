@@ -18,6 +18,7 @@ Route::get('/news/', 'NewsController@index');
 Route::get('/news/{url_news}', 'NewsController@full')->name('full_news');
 Route::get('/coaches/', 'CoachController@index');
 Route::get('/coaches/{url}', 'CoachController@index');
+Route::get('/documents/{cat_url?}', 'DocumentController@index');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

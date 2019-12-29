@@ -61,19 +61,6 @@
 				visibleClass: 'is-menu-visible'
 			});
 
-		$('#menu > ul > li').click(function(e){
-
-			var ul = $(this).find('ul');
-			if(ul.length > 0)
-			{
-				ul.toggle();
-				e.stopPropagation();	
-				e.preventDefault();			}
-		});
-		$('#menu > ul > li  li').click(function(e){
-			e.stopPropagation();
-		});
-
 		// Header.
 		if ($banner.length > 0
 		&&	$header.hasClass('alt')) {
@@ -102,7 +89,7 @@ function FadeInFon()
 				imgnum = 1;
 			}
 			else{
-				imgnum++;				
+				imgnum++;
 			}
 			fadeOutFon();
 		}
@@ -138,23 +125,6 @@ setTimeout(function(){
 	FadeInFon();
 }, 5000);
 
-
-
-/*
-$banner = $('#banner');
-$header = $('#header');
-$(window).scroll(function(){
-
-	if($banner.outerHeight() <=  $(document).scrollTop())
-	{
-		$header.removeClass('alt');
-	}
-	else
-	{
-		$header.addClass('alt');
-	}
-});
-*/
 
 $(window).on("load", function() {
 
